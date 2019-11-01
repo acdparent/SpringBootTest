@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+ openId:
+  image: "openmicroscopy/apacheds"
+  ports: 
+   - "389:10389"
+ apache_web_server:
+  image: "httpd"
+  ports:
+   - "80:80"
